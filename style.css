@@ -1,0 +1,276 @@
+/* Global Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 10px;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("bgimage.avif"), #000;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-container {
+    width: 550px;
+    border-radius: 8px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 50px;
+    box-shadow: 20px 20px 20px 20px rgba(248, 245, 245, 0.3);
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.form-group {
+    position: relative;
+    border-bottom: 2px solid #ccc;
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+    margin-bottom: 10px;
+}
+
+button[type="submit"]:hover {
+    color: #fff;
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.dash a {
+    color: white;
+    text-align: center;
+    margin-left: 190px;
+}
+
+
+/* Style the table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+/* Style the table headings */
+
+thead th {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: left;
+}
+
+
+/* Style the table rows */
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/* Style the table cells */
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.Create-account {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.Create-account a {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+table {
+    width: 107%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    /* Table background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    /* Table shadow */
+    overflow-x: auto;
+    /* Add horizontal scroll on smaller screens */
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    /* Increased padding */
+    text-align: left;
+}
+
+th {
+    background-color: hsl(0, 4%, 75%);
+    color: #555;
+    /* Heading text color */
+    font-size: 25px;
+    text-align: center;
+}
+
+td {
+    color: #555;
+    /* Heading text color */
+    font-size: 20px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Alternate row color */
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        overflow-x: 300px;
+        /* Add horizontal scroll on smaller screens */
+    }
+}
+
+#update-form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    height: 350px;
+}
+
+#update-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#update-form input[type="text"],
+#update-form input[type="email"],
+#update-form input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 5px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+#update-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+}
+
+#update-form button[type="submit"] {
+    background-color: #4CAF50;
+}
+
+#update-form button[type="button"] {
+    background-color: #f44336;
+}
+
+#logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    background-color: #814caf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#logout-btn::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    top: calc(4px/-1);
+    left: calc(4px/-1);
+    background: linear-gradient(to right, #222 0%, #222 100%), linear-gradient(to top, #222 50%, transparent 50%), linear-gradient(to top, #222 50%, transparent 50%), linear-gradient(to right, #222 0%, #222 100%), linear-gradient(to left, #222 0%, #222 100%);
+    background-size: 100% 4px, 4px 200%, 4px 200%, 0% 4px, 0% 4px;
+    background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
+    background-repeat: no-repeat, no-repeat;
+    transition: transform 0.2s ease-in-out, background-position 0.2s ease-in-out, background-size 0.2s ease-in-out;
+    transform: scaleX(0) rotate(180deg);
+    transition-delay: 0.4s, 0.2s, 0s;
+}
+
+#logout-btn:hover::before {
+    background-size: 200% 4px, 4px 400%, 4px 400%, 55% 4px, 55% 4px;
+    background-position: 50% 100%, 0% 100%, 100% 100%, 100% 0%, 0% 0%;
+    transform: scaleX(1) rotate(180deg);
+    transition-delay: 0s, 0.2s, 0.4s;
+}
